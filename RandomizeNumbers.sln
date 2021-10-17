@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizeNumbers", "RandomizeNumbers\RandomizeNumbers.csproj", "{73C936C9-1F02-48B2-9FD0-32D0E9728139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkingTest", "BenchmarkingTest\BenchmarkingTest.csproj", "{8602232B-7112-4D56-8B6B-E91AE5EB1B3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C936C9-1F02-48B2-9FD0-32D0E9728139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C936C9-1F02-48B2-9FD0-32D0E9728139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C936C9-1F02-48B2-9FD0-32D0E9728139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C936C9-1F02-48B2-9FD0-32D0E9728139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8602232B-7112-4D56-8B6B-E91AE5EB1B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8602232B-7112-4D56-8B6B-E91AE5EB1B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8602232B-7112-4D56-8B6B-E91AE5EB1B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8602232B-7112-4D56-8B6B-E91AE5EB1B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E57A4D27-4988-44C6-8C20-F72E49D0293E}
+	EndGlobalSection
+EndGlobal
