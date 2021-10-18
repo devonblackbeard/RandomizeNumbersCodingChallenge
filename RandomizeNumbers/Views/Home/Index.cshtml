@@ -1,8 +1,68 @@
-﻿@{
+﻿@model List<int>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="row">
+    <div class="text-center">
+        <h1>Welcome! Let's Generate Random Numbers ....</h1>
+    </div>
 </div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GenerateNumbers">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Generate" class="btn btn-primary mt-5" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model != null)
+{
+    <div class="row">
+        <div class="col-sm">
+            @for (int i = 0; i < 2000; i++)
+            {
+                <ul>
+                    <li>@Model[i]</li>
+                </ul>
+            }
+        </div>
+        <div class="col-sm">
+            @for (int i = 2000; i < 4000; i++)
+            {
+                <ul>
+                    <li>@Model[i]</li>
+                </ul>
+            }
+        </div>
+        <div class="col-sm">
+            @for (int i = 4000; i < 6000; i++)
+            {
+                <ul>
+                    <li>@Model[i]</li>
+                </ul>
+            }
+        </div>
+        <div class="col-sm">
+            @for (int i = 6000; i < 8000; i++)
+            {
+                <ul>
+                    <li>@Model[i]</li>
+                </ul>
+            }
+        </div>
+        <div class="col-sm">
+            @for (int i = 8000; i < 10000; i++)
+            {
+                <ul>
+                    <li>@Model[i]</li>
+                </ul>
+            }
+        </div>
+    </div>
+}
