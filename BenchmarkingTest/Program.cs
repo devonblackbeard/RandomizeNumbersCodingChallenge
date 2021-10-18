@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using BenchmarkTests;
 
-namespace BenchmarkingTest
+namespace BenchmarkEfficiencyTests
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Lets Generate Random Numbers!");
+
+            BenchmarkRunner.Run<RandomNumberGeneratorBenchmark>();
+
+            Console.ReadKey();
+
         }
+
     }
 }

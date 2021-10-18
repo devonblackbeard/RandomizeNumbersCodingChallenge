@@ -37,7 +37,7 @@ namespace RandomizeNumbers.Controllers
 
             int count = listOfInt.Count;
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count - 1; i++)
             {
                 int index = i + rand.Next(count - i);
                 int temp = listOfInt[index];
