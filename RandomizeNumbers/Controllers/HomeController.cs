@@ -32,26 +32,28 @@ namespace RandomizeNumbers.Controllers
         [HttpPost]
         public IActionResult GenerateNumbers()
         {
-            Random rand = new Random();
-            List<int> listOfInt = Enumerable.Range(1, 10000).ToList();
+            List<int> listOfInt = GetShuffledListYates(10000);         
+
+            return View("Index", listOfInt);
+        }
+
+        public static List<int> GetShuffledListYates(int n)
+        {
+            Random random = new Random();
+            List<int> listOfInt = Enumerable.Range(1, n).ToList();
 
             int count = listOfInt.Count;
 
             for (int i = 0; i < count - 1; i++)
             {
-                int index = i + rand.Next(count - i);
+                int index = i + random.Next(count - i);
                 int temp = listOfInt[index];
-                //perform swap
-                listOfInt[index] = listOfInt[i];
+
                 listOfInt[i] = temp;
+                listOfInt[index] = listOfInt[i];
             }
 
-            if (listOfInt.Count != listOfInt.Distinct().Count())
-            {
-                throw new Exception();
-            }
-
-            return View("Index", listOfInt);
+            return listOfInt;
         }
 
     }

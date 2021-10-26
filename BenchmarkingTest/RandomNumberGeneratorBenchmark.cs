@@ -13,7 +13,7 @@ namespace BenchmarkTests
         public List<int> GetRandomNumberFisherYates()
         {
             RandomNumberGenerator generator = new RandomNumberGenerator();
-            var randomList = generator.GetRandomNumberYates();
+            var randomList = generator.GetRandomNumberYates(10000);
             return randomList;
         }
 
